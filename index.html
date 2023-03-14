@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>CRUD Bootstrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/st    yle.css">
+    <script src="/js/script.js" defer></script>
+
+</head>
+
+<body class="bg-secondary bg-opacity-25">
+    <div class="container py-5 min-vh-100 d-flex flex-column justify-content-center">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between">
+                <h4>Cadatro de Funcionários</h4>
+                <button class="btn btn-success m-0" type="button" data-bs-toggle="modal" id="incluir"
+                    data-bs-target="#cadastroModal">Incluir</button>
+            </div>
+            <div class="card-body">
+                <table id="tableFun" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Função</th>
+                            <th>Salário</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </div>
+        <!--Modal-->
+        <div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="cadastroModalLabel">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body container-fluid">
+                        <form id="formFunc">
+                            <div class="mb-5">
+                                <input class="form-control border-0 border-bottom border-dark rounded-0" id="nome"
+                                    type="text" placeholder="Nome" autofocus required>
+                            </div>
+                            <div class="mb-5">
+                                <input class="form-control border-0 border-bottom border-dark rounded-0" id="funcao"
+                                    type="text" placeholder="Função" required>
+                            </div>
+                            <div class="mb-5">
+                                <input class="form-control border-0 border-bottom border-dark rounded-0" id="salario"
+                                    type="text" placeholder="Salário" required>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button id="btnSalvar" type="submit" class="btn btn-success">Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
